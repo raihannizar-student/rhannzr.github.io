@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Canvas Support Check</title>
+</head>
+<body>
+<script>
+    // Cek apakah browser mendukung elemen canvas
+    function isCanvasSupported() {
+    const elem = document.createElement('canvas');
+    return !!(elem.getContext && elem.getContext('2d'));
+    }
+
+    // Tampilkan pesan berdasarkan hasil pengecekan
+    if (isCanvasSupported()) {
+    document.write('Browser mendukung elemen canvas pada HTML5.');
+    } else {
+    document.write('Maaf, browser tidak mendukung elemen canvas pada HTML5.');
+    }
+</script>
+</body>
+</html>
